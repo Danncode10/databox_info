@@ -86,7 +86,7 @@ clean local-first foundation for Databox.
     baseline state.
   - Dependencies: GitHub repository `Danncode10/databox` exists.
 
-- [ ] [P1.2] Rewrite project context documents for Databox
+- [x] [P1.2] Rewrite project context documents for Databox
   - Goal: Replace DannFlow/SaaS language with Databox's local labeling-tool
     direction so future agents read the right product intent first.
   - Files: `README.md`, `PROJECT_CONTEXT.md`, `business.json`, `CLAUDE.md`,
@@ -95,7 +95,7 @@ clean local-first foundation for Databox.
     rewrite only stale product assumptions.
   - Dependencies: `[P1.1]`
 
-- [ ] [P1.3] Replace app entry flow with dataset chooser
+- [x] [P1.3] Replace app entry flow with dataset chooser
   - Goal: Make `/` show the Databox dataset chooser instead of a marketing
     landing page.
   - Files: `src/app/page.tsx`, `src/app/layout.tsx`, `src/components/databox/`
@@ -103,7 +103,7 @@ clean local-first foundation for Databox.
     no marketing hero.
   - Dependencies: `[P1.2]`
 
-- [ ] [P1.4] Remove dashboard-oriented UI and routes
+- [x] [P1.4] Remove dashboard-oriented UI and routes
   - Goal: Remove or quarantine SaaS dashboard surfaces that do not belong in
     Databox.
   - Files: `src/app/dashboard/`, `src/components/dashboard-shell.tsx`,
@@ -112,7 +112,7 @@ clean local-first foundation for Databox.
     deleting anything still imported by the new dataset chooser.
   - Dependencies: `[P1.3]`
 
-- [ ] [P1.5] Remove marketing, blog, and business modules
+- [x] [P1.5] Remove marketing, blog, and business modules
   - Goal: Delete unused SaaS features after routes no longer depend on them.
   - Files: `src/app/blog/`, `src/components/landing/`, `src/services/blog.ts`,
     `src/services/leads.ts`, `src/services/bookings.ts`,
@@ -123,7 +123,7 @@ clean local-first foundation for Databox.
     batch.
   - Dependencies: `[P1.4]`
 
-- [ ] [P1.6] Decide and scaffold local data layer
+- [x] [P1.6] Decide and scaffold local data layer
   - Goal: Establish how Databox reads/writes local datasets before annotation UI
     work begins.
   - Files: `.gitignore`, `src/lib/databox/`, `src/services/datasets.ts`,
@@ -132,7 +132,7 @@ clean local-first foundation for Databox.
     database; keep path access safe and scoped to the dataset root.
   - Dependencies: `[P1.3]`
 
-- [ ] [P1.7] Reassess Supabase and auth
+- [x] [P1.7] Reassess Supabase and auth
   - Goal: Decide whether Supabase/auth remain in v1 or are removed from the
     local-first app.
   - Files: `src/app/login/`, `src/app/auth/`, `src/app/forgot-password/`,
@@ -142,7 +142,7 @@ clean local-first foundation for Databox.
     temporarily, isolate it so Databox core does not depend on it.
   - Dependencies: `[P1.6]`
 
-- [ ] [P1.8] Prune dependencies after code removal
+- [x] [P1.8] Prune dependencies after code removal
   - Goal: Remove packages that only supported deleted SaaS features.
   - Files: `package.json`, `package-lock.json`
   - Guardrails: Remove Tiptap after blog deletion, Upstash after rate-limit
@@ -150,14 +150,14 @@ clean local-first foundation for Databox.
     is complete.
   - Dependencies: `[P1.5]`, `[P1.7]`
 
-- [ ] [P1.9] Create Databox source folders and service boundaries
+- [x] [P1.9] Create Databox source folders and service boundaries
   - Goal: Put future Databox code in clear locations before feature work starts.
   - Files: `src/components/databox/`, `src/lib/databox/`, `src/services/`
   - Guardrails: UI components do not contain filesystem logic; dataset,
     annotation, image, and export logic live in services/lib helpers.
   - Dependencies: `[P1.6]`
 
-- [ ] [P1.10] Verify cleanup
+- [x] [P1.10] Verify cleanup
   - Goal: Confirm the repo is clean, buildable, and no longer presenting itself
     as a SaaS starter.
   - Files: full repo
