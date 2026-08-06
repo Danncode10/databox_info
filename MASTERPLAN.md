@@ -79,7 +79,7 @@ clean local-first foundation for Databox.
 - Decide whether v1 uses plain filesystem JSON only, SQLite, or a small local
   database plus filesystem images.
 
-- [ ] [P1.1] Freeze current baseline
+- [x] [P1.1] Freeze current baseline
   - Goal: Make the current starter state recoverable before large deletion work.
   - Files: `.git/`, `Cleanup.md`, `MASTERPLAN.md`
   - Guardrails: Do not delete code in this task; only confirm source control and
