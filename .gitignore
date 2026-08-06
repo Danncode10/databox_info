@@ -65,6 +65,9 @@ mcp.json
 # Screenshot for Claude basis
 /ss/*
 
+# Local Databox datasets
+/datasets/
+
 # Supabase CLI generated files (machine-specific, ephemeral)
 supabase/.temp/
 
