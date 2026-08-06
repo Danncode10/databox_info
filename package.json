@@ -25,7 +25,7 @@
     "eslint": "^9.39.4",
     "eslint-config-next": "16.2.9",
     "tailwindcss": "^4",
-    "typescript": "^6"
+    "typescript": "^7"
   },
   "description": "Local-first image annotation studio for YOLO-ready computer vision datasets"
 }
